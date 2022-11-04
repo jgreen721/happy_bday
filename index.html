@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>🎂 ~ Happy Birthday ~ 🎾</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- <img class="mtn-img" src="./Mountain.png" alt="" /> -->
+      <div class="tennis-court">
+        <div class="tennis-boundary-rect">
+          <div class="smaller-boundary-rect">
+            <div class="small-rect">
+              <div class="cel"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tennis-rackets">
+        <div class="tennis-div tennis-1">
+          <div class="tennis-head">
+            <div class="frame"></div>
+            <div class="racket-1"></div>
+          </div>
+          <div class="tennis-handle">
+            <div class="tape-col tape-col1"></div>
+            <div class="tape-col tape-col2"></div>
+            <div class="tape-col tape-col3"></div>
+            <div class="tape-col tape-col4"></div>
+            <div class="tape-col tape-col5"></div>
+            <div class="tape-col tape-col6"></div>
+            <div class="tape-col tape-col7"></div>
+            <div class="tape-col tape-col8"></div>
+            <div class="tape-col tape-col9"></div>
+            <div class="tape-col tape-col10"></div>
+          </div>
+        </div>
+        <div class="tennis-div tennis-2">
+          <div class="tennis-head">
+            <div class="frame blue"></div>
+            <div class="racket-2"></div>
+          </div>
+          <div class="tennis-handle">
+            <div class="tape-col tape-col1"></div>
+            <div class="tape-col tape-col2"></div>
+            <div class="tape-col tape-col3"></div>
+            <div class="tape-col tape-col4"></div>
+            <div class="tape-col tape-col5"></div>
+            <div class="tape-col tape-col6"></div>
+            <div class="tape-col tape-col7"></div>
+            <div class="tape-col tape-col8"></div>
+            <div class="tape-col tape-col9"></div>
+            <div class="tape-col tape-col10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="happy-bday-div">
+        <h1 class="happy">
+          <span style="--s: 1" class="fat happy-span">H</span>
+          <span style="--s: 2" class="happy-span">a</span>
+          <span style="--s: 3" class="happy-span">p</span>
+          <span style="--s: 4" class="happy-span">p</span>
+          <span style="--s: 5" class="happy-span">y</span>
+        </h1>
+        <h1 class="birthday">
+          <span style="--s: 6" class="fat birthday-span">B</span>
+          <span style="--s: 7" class="birthday-span">i</span>
+          <span style="--s: 8" class="birthday-span">r</span>
+          <span style="--s: 9" class="birthday-span">t</span>
+          <span style="--s: 10" class="birthday-span">h</span>
+          <span style="--s: 11" class="birthday-span">d</span>
+          <span style="--s: 12" class="birthday-span">a</span>
+          <span style="--s: 13" class="birthday-span">y</span>
+          <span style="--s: 14" class="birthday-span">!</span>
+          <span style="--s: 15" class="birthday-span">!</span>
+        </h1>
+      </div>
+    </div>
+
+    <script>
+      function stringRackets() {
+        let racket1 = document.querySelector(".racket-1");
+        let racket2 = document.querySelector(".racket-2");
+
+        for (let i = 0; i < 150; i++) {
+          let gridDiv = document.createElement("div");
+          gridDiv.className = "grid-div";
+          let cloneGrid = gridDiv.cloneNode(true);
+          racket1.append(gridDiv);
+          cloneGrid.classList.add("red");
+          racket2.append(cloneGrid);
+        }
+      }
+
+      stringRackets();
+    </script>
+  </body>
+</html>
