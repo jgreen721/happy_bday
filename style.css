@@ -79,6 +79,8 @@ html {
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 #confetti-canvas {
@@ -112,6 +114,20 @@ html {
   font-size: 4rem;
   letter-spacing: 0.25rem;
   /* text-shadow: 1px 1px 20px var(--pink); */
+}
+
+.header-caption {
+  display: flex;
+  gap: 1rem;
+  transform: translateX(5rem);
+  transform: scale(0);
+  animation: scalegreeting 2s 4s linear forwards;
+}
+
+h3 {
+  color: white;
+  font-family: var(--bdayFont);
+  font-size: 3rem;
 }
 
 .vase-flowers-parent-container {
